@@ -104,5 +104,6 @@ dist
 .tern-port
 
 # Misc
+.DS_Store
 .vscode
 .history
