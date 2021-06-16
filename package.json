@@ -1,0 +1,23 @@
+{
+  "name": "arkbank_dev",
+  "version": "1.0.0",
+  "description": "git@github.com:nsc9605/ArkBank_Dev.git",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nsc9605/ArkBank_Dev.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nsc9605/ArkBank_Dev/issues"
+  },
+  "homepage": "https://github.com/nsc9605/ArkBank_Dev#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.12.14"
+  }
+}
