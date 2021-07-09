@@ -1,10 +1,13 @@
 import React from 'react'
+import Title from '../components/Title'
+import CarouselSlide from '../components/CarouselSlide'
 
 const HomeScreen = () => {
     return (
-        <div>
-            <h1>Home Screen</h1>
-        </div>
+        <>
+            <Title />
+            <CarouselSlide />
+        </>
     )
 }
 

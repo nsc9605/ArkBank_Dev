@@ -6,17 +6,37 @@ import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap'
 const Header = () => {
     return (
         <header>
-        <Navbar bg='primary' variant='dark' expand='lg'>
+        <Navbar bg='info' variant='dark' expand='lg'>
           <Container>
           <Nav className='ml-auto'>
             <LinkContainer to='/'>
-              <Navbar.Brand><strong>Ark BANK</strong></Navbar.Brand>
+              <Navbar.Brand><strong>Ark BANK <i class="fas fa-university"></i></strong></Navbar.Brand>
             </LinkContainer>
-            <LinkContainer to='/login'>
+            <LinkContainer to='/'>
                   <Nav.Link>
-                   <strong><i className='fas fa-user'></i> Sign In</strong> 
+                   Checking / Savings
                   </Nav.Link>
-                </LinkContainer>
+            </LinkContainer>
+            <LinkContainer to='/'>
+                  <Nav.Link>
+                   Credit Cards 
+                  </Nav.Link>
+            </LinkContainer>
+            <LinkContainer to='/'>
+                  <Nav.Link>
+                   Home Loans 
+                  </Nav.Link>
+            </LinkContainer>
+            <LinkContainer to='/'>
+                  <Nav.Link>
+                   Auto 
+                  </Nav.Link>
+            </LinkContainer>
+            <LinkContainer to='/'>
+                  <Nav.Link>
+                   Investing by Ark Bank 
+                  </Nav.Link>
+            </LinkContainer>
           </Nav>      
           </Container>
         </Navbar>
