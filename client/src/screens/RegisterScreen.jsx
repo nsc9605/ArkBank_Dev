@@ -63,7 +63,7 @@ const RegisterScreen = () => {
 
             <Row className='py-3'>
                 <Col>
-                    HAve an Account?{' '} 
+                    Have an Account?{' '} 
                     <Link to={'/login'}>
                     Login</Link>
                 </Col>

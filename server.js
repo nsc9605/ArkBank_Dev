@@ -14,16 +14,16 @@ if (process.env.NODE_ENV === "production") {
 }
 
 
-// Connect to the Mongo DB
-// mongoose.connect(v"mongodb://localhost/",
-//   {
-//     useNewUrlParser: true,
-//     useFindAndModify: false,
-//   },
-//   () => {
-//     console.log("Mongoose is connected");
-//   }
-// );
+// Connect to the Mongo DB 
+mongoose.connect("mongodb://localhost/arkbankdb", // change to whatever db name is
+  {
+    useNewUrlParser: true,
+    useFindAndModify: false,
+  },
+  () => {
+    console.log("Mongoose is connected");
+  }
+);
 
 // Start the API server
 app.listen(PORT, function () {

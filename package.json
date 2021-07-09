@@ -2,14 +2,22 @@
   "name": "arkbank_dev",
   "version": "1.0.0",
   "description": "git@github.com:nsc9605/ArkBank_Dev.git",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "if-env SOME_ENV_VAR=some_val ANOTHER_ENV_VAR=another_val && npm run this || npm run that",
+    "start:prod": "node server.js",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "client": "cd client && npm run start",
+    "install": "cd client && npm install",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm run install --prefix client && npm run build --prefix client"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nsc9605/ArkBank_Dev.git"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -18,6 +26,11 @@
   "homepage": "https://github.com/nsc9605/ArkBank_Dev#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "mongojs": "^3.1.0",
     "mongoose": "^5.12.14"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.0",
+    "nodemon": "^2.0.10"
   }
 }
