@@ -7,6 +7,10 @@ const LoginScreen = () => {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
 
+    // const validateForm = () => {
+    //     return email.length > 0 && password.length > 0;
+    // }
+
     const submitHandler = (e) => {
         e.preventDefault()
     }
@@ -35,7 +39,7 @@ const LoginScreen = () => {
                         ></Form.Control>
                 </Form.Group>
 
-                <Button type='submit' variant='primary'>SIGN IN</Button>
+                <Button type='submit' variant='primary' onClick={submitHandler}>SIGN IN</Button>
             </Form>
 
             <Row className='py-3'>
