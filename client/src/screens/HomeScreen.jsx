@@ -1,12 +1,14 @@
 import React from 'react'
 import Title from '../components/Title'
-import CarouselSlide from '../components/CarouselSlide'
+import Footer from '../components/Footer'
+import MainCards from '../components/MainCards'
 
 const HomeScreen = () => {
     return (
         <>
             <Title />
-            <CarouselSlide />
+            <MainCards />
+            <Footer />
         </>
     )
 }
