@@ -11,15 +11,6 @@ const RegisterScreen = () => {
 
     const submitHandler = (e) => {
         e.preventDefault()
-        
-        // const user = {
-        //     name: name,
-        //     email: email,
-        //     password: password,
-        //     confirmPassword: confirmPassword
-        // }
-
-        // axios.post()
 
     }
     
